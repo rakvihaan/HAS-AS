@@ -7,7 +7,9 @@
 ## Working
 ---
 - Let's start with the working of the **Laser Tripwire Alarm System**
-  - The Alarm system uses a traditional laser module, an LDR, a buzzer, an LED and to carry out the function an Arduino (Any Arduino will work fine).
-    - An LDR or Light Dependent Resistor changes it's resistance value depending on the level of light, which can be used as an input device to the arduino to read, and detect the light levels. In simple words it is used to detect light levels.
-   
+  - The Alarm system uses a traditional laser module, an LDR, a buzzer, an LED, a 16x2 LCD Display and to carry out the function an Arduino (Any Arduino will work fine).
+    - An **LDR or Light Dependent Resistor** changes it's resistance value depending on the level of light, which can be used as an input device to the arduino to read, and detect the light levels. In simple words it is used to detect light levels.
+    - The laser acts as an invisible tripwire which when blocked alters the light level falling on the **LDR** which causes the **Alarm System** to activate.
+    - The **Arduino** is the main part of this system, it reads the light level from the **LDR** and turns on the alarm if the laser light is blocked, which could mean that an intuder has broken in.
+    - The **LCD Diaplay** is used to display the state of the **Alarm System**.  
     
