@@ -49,9 +49,9 @@
 ---
 Clone this repo to a proper location on your pc. 
 Navigate to the folder a run the following line of code to download necessary modules required.
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 ---
 
