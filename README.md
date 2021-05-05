@@ -16,5 +16,8 @@
     
 - Let's check the working of the **Home Automation System**
   - This system uses a Raspberry Pi and few Relays that's it, that's the beauty of using a Raspberry Pi, minimal components when compared to an Arduino version and limitless possiblities.
-    - We will be hosting a webpage on the Pi using a software called Flask. Flask is simple python micro web framework which we will be using to host our control page, and allow us to control some protocols. To learn more on Flask click [here](https://flask.palletsprojects.com/en/1.1.x/)
-    - 
+  - We will be looking at two ways to control the GPIO pins on the Rapberry Pi, one using Flash and the other using Blynk.
+    - We will be hosting a webpage on the Pi using a software called Flask. Flask is simple python micro web framework which we will be using to host our control page, and allow us to control some protocols. To learn more on Flask click [here](https://flask.palletsprojects.com/en/1.1.x/).
+    - We will also be using a python module called RPi.GPIO to controll the GPIO pins of the Raspberry Pi. To learn more about the module click [here](https://pythonhosted.org/RPIO/).
+    - We will also be using Blynk to control the GPIO pins on the Pi. Blynk is a platform used to control IoT hardware remotely over the internet. To learn more about Blynk click [here](https://docs.blynk.cc/)  
+    - Since the power supply on single board computers like Raspberry Pi or on microcontrollers like Arduino cannot be enough to power high current devices or AC appliances we use **Relays** to help us with that. **Relays** are basically electrically operated switches with their own isolated power supply. They can be controlled just like an LED.
