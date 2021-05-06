@@ -87,9 +87,8 @@ First lets start with building the alarm system.
   - Select your board and proper port from the **Tools** menu.(To know to which port is the arduino connected to, use Device Manager on Windows or use `dmesg` command on linux)
   - Click on upload.
   - And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
-` `
-` `
-` `
+&nbsp;
+&nbsp;
 
 
 ### Home Automation with Raspberry Pi
