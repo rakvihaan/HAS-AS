@@ -87,11 +87,14 @@ First lets start with building the alarm system.
   - Select your board and proper port from the **Tools** menu.(To know to which port is the arduino connected to, use Device Manager on Windows or use `dmesg` command on linux)
   - Click on upload.
   - And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
+/
+/
+/
 
 
 ### Home Automation with Raspberry Pi
 ---
-
+/
 - First download **RaspbianOS** for your Pi from [here](https://www.raspberrypi.org/software/operating-systems/).
 - Download **balenaEtcher** from [here](https://www.balena.io/etcher/).
 - Download **SD Card Formatter** from [here](https://www.sdcard.org/downloads/formatter/).
@@ -100,9 +103,9 @@ First lets start with building the alarm system.
   (You can find guides online for further assisstance)
 
 - Now, connect the relays according to the circuit diagram. 
-     ![Screenshot](home_a_rpi.jpeg)
-     
-
+     ![Screenshot](home_a_rpi.jpg)
+/    
+/
 *****Let's first configure the Blynk app to control the relays*****
 
 - Download the Blynk app from the Play Store or the App Store.
@@ -140,10 +143,4 @@ First lets start with building the alarm system.
     
      
      
-     
-- Clone this repo onto a folder on the Pi.
-- Run the following command to download required modules.
-  `pip install -r requirements.txt`
-  
-- Before running the python script there's a few changes that needs to be done.
-     
+ 
