@@ -86,6 +86,6 @@ First lets start with building the alarm system.
 
   - Download Arduino IDE from [here](https://www.arduino.cc/en/software) if already haven't.
   - Open the sketch **Alarm_System.ino** using the IDE.
-  - Select your board and proper port from the **Tools** menu.
+  - Select your board and proper port from the **Tools** menu.(To know to which port is the arduino connected to, use Device Manager on Windows or use `dmesg` command on linux)
   - Click on upload.
   - And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
