@@ -47,14 +47,11 @@
   - Wires used in household wirings
   
 
-## g 
----
-Clone this repo to a proper location on your pc. 
-Navigate to the folder a run the following line of code to download necessary modules required.
-```
-pip install -r requirements.txt
-```
+## Building
 
+---
+
+### Laser Tripwire Alarm System
 ---
 
 First lets start with building the alarm system.
@@ -65,8 +62,8 @@ First lets start with building the alarm system.
 
 
   The pins of the LCD display are connected to the arduino in the following manner: 
-    1. VSS/GND ==>  GND(Arduino)
-    2. VCC     ==>  5v(Arduino)
+    1. VSS/GND ==>  GND
+    2. VCC     ==>  5v
     3. VEE     ==>  Potentiometer
     4. RS      ==>  D7
     5. RW      ==>  GND
@@ -85,7 +82,15 @@ First lets start with building the alarm system.
     After the circuit is complete you can continue with uploading the sketch.
 
   - Download Arduino IDE from [here](https://www.arduino.cc/en/software) if already haven't.
+  - Clone this repo or just download the **Alarm_System.ino** file.
   - Open the sketch **Alarm_System.ino** using the IDE.
   - Select your board and proper port from the **Tools** menu.(To know to which port is the arduino connected to, use Device Manager on Windows or use `dmesg` command on linux)
   - Click on upload.
   - And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
+
+
+### Home Automation with Raspberry Pi
+---
+
+First lets look at the wiring
+- Connect the relays according to the circuit diagram. 
