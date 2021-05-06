@@ -92,5 +92,58 @@ First lets start with building the alarm system.
 ### Home Automation with Raspberry Pi
 ---
 
-First lets look at the wiring
-- Connect the relays according to the circuit diagram. 
+- First download **RaspbianOS** for your Pi from [here](https://www.raspberrypi.org/software/operating-systems/).
+- Download **balenaEtcher** from [here](https://www.balena.io/etcher/).
+- Download **SD Card Formatter** from [here](https://www.sdcard.org/downloads/formatter/).
+- Format your microSD card using SD Card Formatter and flash the RaspbianOS using **balenaEtcher** onto the SD Card. 
+- Plug the SD card into the Pi and boot it.
+  (You can find guides online for further assisstance)
+
+- Now, connect the relays according to the circuit diagram. 
+     ![Screenshot](home_a_rpi.jpeg)
+     
+
+*****Let's first configure the Blynk app to control the relays*****
+
+- Download the Blynk app from the Play Store or the App Store.
+- Select **New Project**.
+- Now type in any name you want, Under **Choose Device** select your Raspberry Pi.(For Raspberry Pi Zero, select Raspberry Pi 3B, as there's no option for RPi Zero).
+- Now you get an empty space, click on the plus icon on the top and select a **button**. Click on it and select the GPIO pin to which one of the relay is connected to, and make sure to put the **Mode** to **Switch**.
+- Repeat the process for the rest of the Relays.
+- Now click on the gear icon on the top get the Auth token, keep it aside we'll need it later.
+
+- Lets now install the required softwares to access the Pi using the Blynk app:
+  - First of all, you need to install Node.js. Before that we need to remove older versions of Node.js
+    ```
+    sudo apt-get purge node nodejs node.js -y
+    sudo apt-get autoremove
+    ```
+  - Next run the following commands to install Node.js
+    ```
+    curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt-get install build-essential nodejs -y
+    ```
+    Check the installation with `npm -v` and `node --version` 
+  - Now install Blynk
+    ```
+    sudo npm install blynk-library -g
+    sudo npm install onoff -g
+    ```
+  - Now run default Blynk client. Replace ***YourAuthToken*** with the auth token you obtain before.
+    ```
+    export PATH=$PATH:/opt/nodejs/bin/
+    unset NODE_PATH
+    blynk-client YourAuthToken
+    ```
+  - Now on your Blynk app click on the play icon on the top, now should now be able to turn the lights on and off. 
+    
+     
+     
+     
+- Clone this repo onto a folder on the Pi.
+- Run the following command to download required modules.
+  `pip install -r requirements.txt`
+  
+- Before running the python script there's a few changes that needs to be done.
+     
