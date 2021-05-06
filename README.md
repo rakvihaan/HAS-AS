@@ -61,6 +61,9 @@ First lets start with building the alarm system.
 
 - Connect the the components according to the circuit diagram.
 
+  ![Screenshot](alarm_system_circuit.jpeg)
+
+
 The pins of the LCD display are connected to the arduino in the following manner: 
   1. VSS/GND ==>  GND(Arduino)
   2. VCC     ==>  5v(Arduino)
