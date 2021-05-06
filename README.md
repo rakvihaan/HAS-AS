@@ -61,31 +61,31 @@ First lets start with building the alarm system.
 
 - Connect the the components according to the circuit diagram.
 
-  ![Screenshot](alarm_system_circuit.jpeg)
+    ![Screenshot](alarm_system_circuit.jpeg)
 
 
-The pins of the LCD display are connected to the arduino in the following manner: 
-  1. VSS/GND ==>  GND(Arduino)
-  2. VCC     ==>  5v(Arduino)
-  3. VEE     ==>  Potentiometer
-  4. RS      ==>  D7
-  5. RW      ==>  GND
-  6. E       ==>  D8
-  7. DB0     ==>  NOTHING  
-  8. DB1     ==>  NOTHING
-  9. DB2     ==>  NOTHING
-  10. DB3    ==>  NOTHING
-  11. DB4    ==>  D9
-  12. DB5    ==>  D10
-  13. DB6    ==>  D11
-  14. DB7    ==>  D12
-  15. LED+   ==>  5V
-  16. LED-   ==>  GND
-  
-  After the circuit is complete you can continue with uploading the sketch.
-  
-- Download Arduino IDE from [here](https://www.arduino.cc/en/software) if already haven't.
-- Open the sketch **Alarm_System.ino** using the IDE.
-- Select your board and proper port from the **Tools** menu.
-- Click on upload.
-- And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
+  The pins of the LCD display are connected to the arduino in the following manner: 
+    1. VSS/GND ==>  GND(Arduino)
+    2. VCC     ==>  5v(Arduino)
+    3. VEE     ==>  Potentiometer
+    4. RS      ==>  D7
+    5. RW      ==>  GND
+    6. E       ==>  D8
+    7. DB0     ==>  NOTHING  
+    8. DB1     ==>  NOTHING
+    9. DB2     ==>  NOTHING
+    10. DB3    ==>  NOTHING
+    11. DB4    ==>  D9
+    12. DB5    ==>  D10
+    13. DB6    ==>  D11
+    14. DB7    ==>  D12
+    15. LED+   ==>  5V
+    16. LED-   ==>  GND
+
+    After the circuit is complete you can continue with uploading the sketch.
+
+  - Download Arduino IDE from [here](https://www.arduino.cc/en/software) if already haven't.
+  - Open the sketch **Alarm_System.ino** using the IDE.
+  - Select your board and proper port from the **Tools** menu.
+  - Click on upload.
+  - And you are done!!! Your **Laser Tripwire Alarm System** should now be working.
