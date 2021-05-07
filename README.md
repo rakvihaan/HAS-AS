@@ -18,7 +18,7 @@
     
 - Let's check the working of the **Home Automation System**
   - This system uses a Raspberry Pi and few Relays that's it, that's the beauty of using a Raspberry Pi, minimal components when compared to an Arduino version and limitless possiblities.
-  - We will be looking at two ways to control the GPIO pins on the Rapberry Pi, one using Flash and the other using Blynk.
+  - We will be looking at two ways to control the GPIO pins on the Rapberry Pi, one using Flask and the other using Blynk.
     - We will be hosting a webpage on the Pi using a software called Flask. Flask is simple python micro web framework which we will be using to host our control page, and allow us to control some protocols. To learn more on Flask click [here](https://flask.palletsprojects.com/en/1.1.x/).
     - We will also be using a python module called RPi.GPIO to controll the GPIO pins of the Raspberry Pi. To learn more about the module click [here](https://pythonhosted.org/RPIO/).
     - We will also be using Blynk to control the GPIO pins on the Pi. Blynk is a platform used to control IoT hardware remotely over the internet. To learn more about Blynk click [here](https://docs.blynk.cc/).  
@@ -80,7 +80,7 @@ First lets start with building the alarm system.
 
     After the circuit is complete you can continue with uploading the sketch.
 
-  - Download Arduino IDE from [here](https://www.arduino.cc/en/software) if already haven't.
+  - Download Arduino IDE from [here](https://www.arduino.cc/en/software).
   - Clone this repo or just download the **Alarm_System.ino** file.
   - Open the sketch **Alarm_System.ino** using the IDE.
   - Select your board and proper port from the **Tools** menu.(To know to which port is the arduino connected to, use Device Manager on Windows or use `dmesg` command on linux)
