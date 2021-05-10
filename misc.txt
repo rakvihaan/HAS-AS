@@ -1,0 +1,18 @@
+##Extras
+
+Want to extend the functionality of the system???
+  Yes??
+  Lets add an email alert feature to our Alarm System.
+  - Open Arduino IDE and upload the **Alarm_System_email_alert.ino** file.
+  - Connect the Arduino to the Raspberry Pi through USB.(You can also connect it through the GPIO pins, but here we'll use direct USB connection for simplicity.)
+  - Run `dmesg` to know the port to which the Arduino is connected to.
+  - Open the file `rpi_arduino_alarm_system.py` and replace 'port' with the port to which Arduino is connected.
+  
+  
+  - Create a spare Gmail account from which we'll be sending the mail alerts from.
+  - Click on the profile picture on the top right corner and click on "Manage your Google Account".
+  - After a new page opens click on the "Security" menu on the left side.
+  - Set up 2 factor verification.(This is important to obtain app password for our program)
+  - After setting up 2 factor verification you should now see a new option "App Passwords".
+  - Click on the "App Passwords" and set it up. Note down the App Password generated.
+  - Open the file `rpi_arduino_alarm_system.py` and put in the details and app password obtain earlier. 
