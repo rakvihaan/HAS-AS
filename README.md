@@ -1,8 +1,7 @@
 # :bulb:HAS-AS
 - For sure many of you were always fascinated about the idea of controlling electric appliances over internet using your phones or other electronic gadgets rather than using the old traditional wall switches.
 - **HAS-AS** is just the thing for you to get started with IoT and learn to control electronic appliances using your phones or other electronic gadgets.
-- **HAS-AS** is a simple **Home Automation** solution to turn on or off simple appliances, with an integrated **Laser Tripwire Alarm System** which sends e-mail alerts when an intruder breaks in (Lets hope that never happens...XD).
-
+- **HAS-AS** is a simple **Home Automation** solution to turn on or off simple appliances, with an integrated **Laser Tripwire Alarm System** system designed to detect intrusion.
 
 
 ## Working
@@ -138,6 +137,38 @@ First lets start with building the alarm system.
     ```
   - Now on your Blynk app click on the play icon on the top, now should now be able to turn the lights on and off. 
     
-     
+---
+
+*****Now let's setup the Flask server to control the relays*****
+
+- Clone this repo and place RPi folder somewhere safe.
+- Now open the file `app.py` and edit the pins section if you used different pins, you can also add additional pins in this section.
+- Now run the `app.py` file.
+- Now on your other device open the browser and enter the IP address of the Pi.(Use `ifconfig` on Pi to know the IP address).
+
+**Voila, now you can control the lights in your home while sitting on the couch.**
+---
+You can run the script on start-up so you dont have to type in the commands to run the script.
+Refer [this](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) to know how.
+---
+##Extras
+
+Want to extend the functionality of the system???
+  Yes??
+  Lets add an email alert feature to our Alarm System.
+  - Open Arduino IDE and upload the **Alarm_System_email_alert.ino** file.
+  - Connect the Arduino to the Raspberry Pi through USB.(You can also connect it through the GPIO pins, but here we'll use direct USB connection for simplicity.)
+  - Run `dmesg` to know the port to which the Arduino is connected to.
+  - Open the file `rpi_arduino_alarm_system.py` and replace 'port' with the port to which Arduino is connected.
+  
+  
+  - Create a spare Gmail account from which we'll be sending the mail alerts from.
+  - Click on the profile picture on the top right corner and click on "Manage your Google Account".
+  - After a new page opens click on the "Security" menu on the left side.
+  - Set up 2 factor verification.(This is important to obtain app password for our program)
+  - After setting up 2 factor verification you should now see a new option "App Passwords".
+  - Click on the "App Passwords" and set it up. Note down the App Password generated.
+  - Open the file `rpi_arduino_alarm_system.py` and put in the details and app password obtain earlier. 
+  
      
  
