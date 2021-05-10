@@ -148,8 +148,8 @@ First lets start with building the alarm system.
 
 **Voila, now you can control the lights in your home while sitting on the couch.**
 ---
-You can run the script on start-up so you dont have to type in the commands to run the script.
-Refer [this](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) to know how.
+- You can run the script on start-up so you dont have to type in the commands to run the script.
+- Refer [this](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/) to know how.
 ---
 
   
