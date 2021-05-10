@@ -66,10 +66,10 @@ First lets start with building the alarm system.
     4. RS      ==>  D7
     5. RW      ==>  GND
     6. E       ==>  D8
-    7. DB0     ==>  NOTHING  
-    8. DB1     ==>  NOTHING
-    9. DB2     ==>  NOTHING
-    10. DB3    ==>  NOTHING
+    7. DB0     ==>  -  
+    8. DB1     ==>  -
+    9. DB2     ==>  -
+    10. DB3    ==>  -
     11. DB4    ==>  D9
     12. DB5    ==>  D10
     13. DB6    ==>  D11
